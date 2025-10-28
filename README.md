@@ -11,8 +11,6 @@ Automated WordPress development and deployment pipeline for InfinityFree. Develo
 - **Free Hosting**: Deploy to InfinityFree with zero hosting costs
 - **FileZilla Integration**: Easy FTP configuration included
 
-- Try SEO Grove: [SEO Grove](https://seogrove.ai/pre-registration)  
-- Join my Skool to say thanks: [My Skool](https://www.skool.com/iss-ai-automation-school-6342)
 
 ## Quick Start
 
