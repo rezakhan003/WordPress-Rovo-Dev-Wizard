@@ -1,0 +1,53 @@
+{
+  "filezilla_config": {
+    "site_name": "InfinityFree - WordPress Site",
+    "host": "ftpupload.net",
+    "port": 21,
+    "protocol": "FTP - File Transfer Protocol",
+    "encryption": "Use explicit FTP over TLS if available",
+    "logon_type": "Normal",
+    "username": "epiz_xxxxx",
+    "password": "your_password_here",
+    "remote_directory": "/htdocs",
+    "local_directory": "./wordpress-export",
+    "transfer_mode": "Passive",
+    "max_connections": 2,
+    "timeout": 120,
+    "notes": "Replace epiz_xxxxx with your actual InfinityFree FTP username and add your password"
+  },
+  "instructions": {
+    "step_1": "Open FileZilla",
+    "step_2": "Go to File > Site Manager",
+    "step_3": "Click 'New Site' and name it 'InfinityFree WordPress'",
+    "step_4": "Fill in the details from the filezilla_config above",
+    "step_5": "Click 'Connect' to test the connection",
+    "step_6": "Navigate to /htdocs directory on remote server",
+    "step_7": "Upload your WordPress files to /htdocs",
+    "tips": [
+      "Use 'Transfer Queue' to manage large uploads",
+      "Enable 'Keep alive' in Settings to prevent timeouts",
+      "Use 'Synchronized browsing' for easier navigation",
+      "Create directory bookmarks for quick access"
+    ]
+  },
+  "infinityfree_specifics": {
+    "ftp_server": "ftpupload.net",
+    "default_port": 21,
+    "root_directory": "/htdocs",
+    "max_file_size": "10MB per file",
+    "concurrent_connections": "Maximum 2-3 connections",
+    "notes": [
+      "Always upload to /htdocs directory (document root)",
+      "Wait a few minutes after upload for changes to appear",
+      "Clear browser cache to see updates",
+      "InfinityFree may cache files for up to 5 minutes"
+    ]
+  },
+  "common_issues": {
+    "connection_timeout": "Reduce number of concurrent connections to 1-2",
+    "slow_uploads": "InfinityFree free tier has bandwidth limits",
+    "files_not_appearing": "Wait 2-5 minutes for files to sync",
+    "permission_denied": "Ensure you're uploading to /htdocs directory",
+    "database_connection_error": "Check database credentials in wp-config.php"
+  }
+}
